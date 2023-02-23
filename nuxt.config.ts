@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
     modules: ['@nuxtjs/apollo', '@nuxtjs/tailwindcss', '@nuxt/image-edge'],
 
-
+    app: {
+      baseURL: '/'
+    },
 
     apollo: {
         clients: {
