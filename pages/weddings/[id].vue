@@ -45,5 +45,11 @@ query getCharacter($id: ID!) {
         :species="data.character.species"
         :location="data.character.location.name"
     />
+
+    <WeddingQuiz
+        :id="data.character.id"
+        :image="data.character.image"
+        :location="data.character.location.name"
+      />
     </div>
 </template>

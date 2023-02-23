@@ -31,7 +31,7 @@ const grayScaleWhenDead = computed(() => props.status === 'Dead' ? { grayscale: 
 
 <template>
     <div class="flex m-3 bg-gray-300 rounded-xl">
-        <NuxtLink :to="`/characters/${id}`">
+        <NuxtLink :to="`/weddings/${id}`">
             <NuxtImg
                 :src="image"
                 width="200"

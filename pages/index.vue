@@ -1,4 +1,5 @@
 <template>
+
     <div class="flex flex-wrap">
       <CharacterCard
         v-for="{ id, name, image, status, species, location } in data.characters.results"
@@ -11,6 +12,7 @@
         :location="location.name"
       />
     </div>
+
   </template>
   <script lang="ts" setup>
   type CharactersResults = {
@@ -45,4 +47,5 @@
   }
   `
   const { data } = await useAsyncQuery<CharactersResults>(query)
+  
   </script>

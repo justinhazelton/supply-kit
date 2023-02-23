@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     apollo: {
         clients: {
           default: {
-            httpEndpoint: 'https://rickandmortyapi.com/graphql'
+            httpEndpoint: //'https://graphql.contentful.com/content/v1/spaces/sq6uqle01nx2/explore?access_token=Qaqn5tNP2M0zJELl4RhWHUATsM7C4w9T4Vbxq9zQTdQ'
+             'https://rickandmortyapi.com/graphql'
           }
         },
       },
