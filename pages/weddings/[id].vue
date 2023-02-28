@@ -36,7 +36,7 @@ query getCharacter($id: ID!) {
 <template>
     <div>
       <NuxtLink to="/" class="ml-3">Back</NuxtLink>
-
+<!--
       <CharacterCard
         :id="data.character.id"
         :name="data.character.name"
@@ -45,7 +45,7 @@ query getCharacter($id: ID!) {
         :species="data.character.species"
         :location="data.character.location.name"
     />
-
+-->
 
     <WeddingQuiz
         :id="data.character.id"
