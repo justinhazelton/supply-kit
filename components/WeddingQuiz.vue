@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { propsToAttrMap } from '@vue/shared';
+import { ref, computed } from 'vue';
 
 const props = defineProps({
 
@@ -20,10 +21,10 @@ const props = defineProps({
 const testVar = props.id
 
 
-import { ref, computed } from 'vue';
+
 const questions = ref([
   {
-    question: 'What colour is the sky?',
+    question: 'What colour is the sky? heheheh',
     answer: 0,
     options: [
       props.id,
