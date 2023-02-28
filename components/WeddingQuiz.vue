@@ -26,6 +26,7 @@ const questions = ref([
   {
     question: 'What colour is the sky? heheheh',
     answer: 0,
+    index: 0,
     options: [
       props.id,
       'Purple',
@@ -45,7 +46,7 @@ const questions = ref([
   }
 ])
 const quizCompleted = ref(false)
-const currentQuestion  = ref(1)
+const currentQuestion  = ref(0)
 const score = computed(() => {
   let value = 0
   questions.value.map(q => {
@@ -110,11 +111,11 @@ const NextQuestion = () => {
                 : ''
              }`">
             <input type="radio" 
-              :name="getCurrentQuestion.index" 
+              name="getCurrentQuestion.index" 
               :value="index"
               v-model="getCurrentQuestion.selected"
               :disabled="getCurrentQuestion.selected"
-              @change="SetAnswer">
+              @change ="SetAnswer">
             <span>{{ option }}</span>
         </label>
       </div>

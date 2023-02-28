@@ -52,5 +52,7 @@ query getCharacter($id: ID!) {
         :image="data.character.image"
         :location="data.character.location.name"
       />
+
+      <Quiz />
     </div>
 </template>
