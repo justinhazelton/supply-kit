@@ -45,7 +45,7 @@ const questions = ref([
   }
 ])
 const quizCompleted = ref(false)
-const currentQuestion  = ref(0)
+const currentQuestion  = ref(1)
 const score = computed(() => {
   let value = 0
   questions.value.map(q => {
@@ -58,6 +58,8 @@ const score = computed(() => {
 const getCurrentQuestion = computed(() => {
   let question = questions.value[currentQuestion.value]
   question.index = currentQuestion.value
+  console.log(`Question ${question.index}`)
+
   return question
 })
 const SetAnswer = evt => {
